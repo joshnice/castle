@@ -1,5 +1,15 @@
+/* font-size: 62.5% now means that 1.0 rem = 10px */
+html { 
+    font-size: 62.5%;
+}
+
 body {
     margin: 0px;
+}
+
+*{ 
+    font-size: 1.4rem;
+    line-height: 1.6rem;
 }
 
 p {
@@ -8,26 +18,33 @@ p {
 
 h1 {
     margin: 0px;
+    font-size: 4rem;
 }
 
 h2 {
     margin: 0px;
+    font-size: 3rem;
 }
 
 h3 {
     margin: 0px;
+    font-size: 2.5rem;
 }
 
 h4 {
     margin: 0px;
+    font-size: 2rem;
 }
 
 h5 {
     margin: 0px;
+    font-size: 1.5rem;
+
 }
 
 h6 {
     margin: 0px;
+    font-size: 1rem;
 }
 
 #notch-header {

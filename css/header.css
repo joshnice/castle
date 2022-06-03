@@ -1,20 +1,18 @@
 #header {
-    height: 125px;
     border-bottom: 1px solid #cccccc;
     font-size: 20px;
     width: 100vw;
-
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
 #header-logo {
-    width: 200px;
+    width: 100px;
 }
 
 #header-title {
-    margin-left: 10px;
+    margin-left: 5px;
 
 }
 
@@ -22,5 +20,5 @@
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
-    margin-right: 20px;
+    margin-right: 10px;
 }
