@@ -43,8 +43,12 @@
     justify-content: center;
 }
 
-.principle-icon {
+.principle-icon-container {
     margin-right: 10px;
+}
+
+.principle-icon {
+    width: 50px;
 }
 
 #customer-satisfaction-text{
