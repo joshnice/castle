@@ -9,10 +9,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 25px;
 
     background-color: darkblue;
     color: white; 
-    padding: 15px;
+    padding: 25px 35px;
+}
+
+#introduction-text {
+    text-align: center;
+    line-height: 20px;
 }
 
 #principles {
