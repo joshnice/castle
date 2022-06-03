@@ -1,0 +1,42 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+}
+
+#principles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.principle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.principle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principle-icon {
+    margin-right: 10px;
+}
