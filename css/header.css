@@ -15,7 +15,6 @@
 
 #header-title {
     margin-left: 5px;
-
 }
 
 #header-menu-icon {
@@ -23,4 +22,9 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
 }
