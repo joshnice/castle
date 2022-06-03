@@ -5,10 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 3px 0px;
 }
 
 #header-logo {
-    width: 100px;
+    width: 75px;
+    margin-left: 5px; 
 }
 
 #header-title {
