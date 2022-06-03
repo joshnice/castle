@@ -1,7 +1,7 @@
 #home {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
 #introduction {
@@ -44,7 +44,7 @@
 }
 
 .principle-icon-container {
-    margin-right: 2 0px;
+    margin-right: 20px;
 }
 
 .principle-icon {
@@ -70,4 +70,18 @@
 
 #reliability-text{
     display: none;
+}
+
+#why-choose-castle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#why-description {
+    line-height: 20px;
+    padding: 0px 30px;
+    text-align: center;
 }
