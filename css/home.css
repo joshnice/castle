@@ -40,3 +40,19 @@
 .principle-icon {
     margin-right: 10px;
 }
+
+#customer-satisfaction-text{
+    display: none;
+}
+
+#excellent-results-text {
+    display: none;
+}
+
+#competitive-pricing-text{
+    display: none;
+}
+
+#reliability-text{
+    display: none;
+}
