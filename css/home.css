@@ -44,11 +44,16 @@
 }
 
 .principle-icon-container {
-    margin-right: 10px;
+    margin-right: 2 0px;
 }
 
 .principle-icon {
     width: 50px;
+}
+
+#pound-icon {
+    height: 55px;
+    width: 40px;
 }
 
 #customer-satisfaction-text{
