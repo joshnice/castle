@@ -8,6 +8,7 @@ body {
     margin: 0px;
     font-weight: 400;
     color: #707070;
+    padding-bottom: 30px;
 }
 
 *{ 
@@ -17,6 +18,7 @@ body {
 
 p {
     margin: 0px;
+    line-height: 20px;
 }
 
 h3 {
