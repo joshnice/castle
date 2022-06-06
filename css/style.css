@@ -47,6 +47,16 @@ h5 {
     font-weight: 400;
 }
 
+button {
+    padding: 10px;
+    width: 120px;
+    background-color: white;
+    border-radius: 0px;
+    border: 0.5px solid #4d4d4d;
+    font-size: 16px;
+    color: #707070;
+}
+
 #notch-header {
     width: 100%;
     height: 50px;
