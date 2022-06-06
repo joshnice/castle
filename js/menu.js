@@ -20,25 +20,29 @@ window.onload = () => {
 
 function menuClicked() {
     if (menuOpen) {
-        pageElements[currentPage].style.display = "flex";
-        pageElements.menu.style.display = "none";
-        openMenuIcon.style.display = "block";
-        closeMenuIcon.style.display = "none";
+        closeMenu(currentPage);
     } else {
-        pageElements[currentPage].style.display = "none";
-        pageElements.menu.style.display = "flex";
-        openMenuIcon.style.display = "none";
-        closeMenuIcon.style.display = "block";
+        openMenu(currentPage);
     }
-    menuOpen = !menuOpen;
 }
 
 function menuItemClicked (menuItem) {
-    console.log(currentPage, menuItem);
-    pageElements.menu.style.display = "none";
-    pageElements[menuItem].style.display = "flex";
     currentPage = menuItem;
-    closeMenuIcon.style.display = "none";
+    closeMenu(menuItem);
+}
+
+function closeMenu(newPage) {
+    pageElements[newPage].style.display = "flex";
+    pageElements.menu.style.display = "none";
     openMenuIcon.style.display = "block";
+    closeMenuIcon.style.display = "none";
     menuOpen = false;
+}
+
+function openMenu(previousPage) {
+    pageElements[previousPage].style.display = "none";
+    pageElements.menu.style.display = "flex";
+    openMenuIcon.style.display = "none";
+    closeMenuIcon.style.display = "block";
+    menuOpen = true;
 }
