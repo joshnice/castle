@@ -26,9 +26,15 @@ function menuClicked() {
     }
 }
 
-function menuItemClicked (menuItem) {
+function menuItemClicked(menuItem) {
     currentPage = menuItem;
     closeMenu(menuItem);
+}
+
+function changePage(newPage) {
+    pageElements[newPage].style.display = "flex";
+    pageElements[currentPage].style.display = "none";
+    currentPage = newPage;
 }
 
 function closeMenu(newPage) {
