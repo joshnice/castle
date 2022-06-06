@@ -4,7 +4,9 @@ html {
 }
 
 body {
-    margin: 0px;    
+    font-family: "Mukta-ExtraLight", serif;
+    margin: 0px;
+    font-weight: 400;
 }
 
 *{ 
