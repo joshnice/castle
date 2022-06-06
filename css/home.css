@@ -9,9 +9,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
 
-    background-color: darkblue;
+    background-color: #394982;
     color: white; 
     padding: 25px 35px;
 }
@@ -19,6 +19,7 @@
 #introduction-text {
     text-align: center;
     line-height: 20px;
+    padding-bottom: 20px;
 }
 
 #principles {
