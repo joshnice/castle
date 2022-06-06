@@ -13,7 +13,6 @@ window.onload = () => {
 
 
 function menuClicked() {
-    console.log("menuClicked", pageElements[currentPage], menuOpen);   
     if (menuOpen) {
         pageElements[currentPage].style.display = "flex";
         pageElements.menu.style.display = "none";
