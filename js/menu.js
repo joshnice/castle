@@ -10,8 +10,6 @@ window.onload = () => {
     }
 }
 
-
-
 function menuClicked() {
     if (menuOpen) {
         pageElements[currentPage].style.display = "flex";
