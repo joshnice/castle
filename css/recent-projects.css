@@ -1,3 +1,26 @@
 #recent-projects {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 10px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-description {
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.project-image {
+    width: 75vw;
+    border: 1px solid black; /*To remove when images are uploaded*/
 }
