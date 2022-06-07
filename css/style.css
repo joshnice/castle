@@ -62,3 +62,19 @@ button {
     height: 50px;
     background-color: black;
 }
+
+input, textarea {
+    outline: none;
+    border: 0px;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+textarea:focus {
+    outline: none;
+}
