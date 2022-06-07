@@ -35,6 +35,7 @@ function changePage(newPage) {
     pageElements[newPage].style.display = "flex";
     pageElements[currentPage].style.display = "none";
     currentPage = newPage;
+    closeMenu(newPage);
 }
 
 function closeMenu(newPage) {
