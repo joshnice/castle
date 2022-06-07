@@ -22,3 +22,31 @@
     justify-content: center;
     gap: 20px;
 }
+
+#enquiry-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.text-input {
+    width: 90vw;
+    border: 0.5px solid #cccccc;
+    border-radius: 5px;
+    color: #707070;
+    font-family: "Mukta-Light", serif;
+}
+
+.enquiry-input {
+    height: 40px;
+    padding: 0px 5px;
+}
+
+#message-input {
+    height: 200px;
+    padding: 5px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+} 
