@@ -6,6 +6,9 @@
     align-items: center;
     justify-content: flex-start;
     padding: 3px 0px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
 }
 
 #header-logo {
