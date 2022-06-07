@@ -1,3 +1,24 @@
 #contact-information {
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    gap: 10px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.method {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
