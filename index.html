@@ -270,11 +270,19 @@
                 <div class="contact-methods">
                     <div class="method">
                         <div class="contact-icon">Icon</div>
-                        <div class="contact-value">Description</div>
+                        <div class="contact-value">Phone</div>
                     </div>
                     <div class="method">
                         <div class="contact-icon">Icon</div>
-                        <div class="contact-value">Description</div>
+                        <div class="contact-value">Email</div>
+                    </div>
+                    <div class="method">
+                        <div class="contact-icon">Icon</div>
+                        <div class="contact-value">Facebook</div>
+                    </div>
+                    <div class="method">
+                        <div class="contact-icon">Icon</div>
+                        <div class="contact-value">Instagram</div>
                     </div>
                 </div>
             </div>
@@ -282,11 +290,11 @@
             <div id="enquiry-form">
                 <h5>Enquiry Form</h5>
                 <div id="enquiry-form-inputs">
-                    <input type="text" id="name-input" class="text-input enquiry-input" placeholder="Full Name" required />
-                    <input type="text" id="email-input" class="text-input enquiry-input" placeholder="Email" required />
-                    <input type="text" id="subject-input" class="text-input enquiry-input" placeholder="Subject" required />
-                    <textarea type="text" id="message-input" class="text-input " placeholder="Message" required></textarea>
-                    <button id="submit-enquiry-form">Submit</button>
+                    <input type="text" id="name-input" class="text-input enquiry-input" placeholder="Full Name"/>
+                    <input type="text" id="email-input" class="text-input enquiry-input" placeholder="Email" />
+                    <input type="text" id="subject-input" class="text-input enquiry-input" placeholder="Subject" />
+                    <textarea type="text" id="message-input" class="text-input " placeholder="Message"></textarea>
+                    <button id="submit-enquiry-form" onclick="submitForm()">Submit</button>
                 </div>
             </div>
 
@@ -298,5 +306,8 @@
 
         <script src="./js/home.js"></script>
         <script src="./js/navigation.js"></script>
+        <script src="./js/contact-us.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
   </body>
 </html>
