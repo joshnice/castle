@@ -64,4 +64,8 @@
     padding: 5px;
     font-size: 1.4rem;
     line-height: 1.6rem;
-} 
+}
+
+#contact-us-button {
+    align-self: flex-end;
+}
