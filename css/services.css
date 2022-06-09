@@ -1,3 +1,38 @@
 #services {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 10px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.service + .service {
+    margin-top: 20px;
+}
+
+.service-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-description {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.service-img {
+    width: 75vw;
+    border: 1px solid black; /*To remove when images are uploaded*/
 }
