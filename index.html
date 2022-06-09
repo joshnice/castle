@@ -38,98 +38,6 @@
             </div>
         </div>
 
-        <div id="home">
-
-            <div id="introduction">
-                <h3>Who we are</h3>
-                <p id="introduction-text">
-                    Here at Castle Damp and Timber, as market leading damp
-                    specialists operating around Derbyshire, Nottinghamshire,
-                    North Leicestershire and all of Staffordshire, we pride
-                    ourselves in providing outstanding work with superb
-                    and friendly customer service.
-                </p>
-            </div>
-
-            <div id="principles">
-                <h3>Our principles</h3>
-
-                <div class="principle">
-                    <div class="principle-container" onclick="principleClicked('customer-satisfaction-text')">
-                        <div class="principle-icon-container">
-                            <img class="principle-icon" src="./assets/icons/principles/thumbs-up.png" />
-                        </div>
-                        <h4 class="principle-text">Customer Satisfaction</h4>
-                    </div>
-                    <p id="customer-satisfaction-text" class="principle-description">
-                        We endeavour to ensure that each and every customer gets the work that they both deserve require from us.
-                    </p>
-                </div>
-
-                <div class="principle">
-                    <div class="principle-container" onclick="principleClicked('excellent-results-text')">
-                        <div class="principle-icon-container">
-                            <img class="principle-icon" src="./assets/icons/principles/tick.png" />
-                        </div>
-                        <h4 class="principle-text">Excellent Results</h4>
-                    </div>
-                    <p id="excellent-results-text" class="principle-description">
-                        We aim to ensure that cleanliness and quality are by words of our performance in every job that we complete.  
-                        All our works come with long guarantees and are completed to our own high standards as well as that of the trading authorities of the UK.
-                    </p>
-                </div>
-
-                <div class="principle">
-                    <div class="principle-container" onclick="principleClicked('competitive-pricing-text')">
-                        <div class="principle-icon-container">
-                            <img class="principle-icon" id="pound-icon" src="./assets/icons/principles/pound.png" />
-                        </div>
-                        <h4 class="principle-text">Competitive Pricing</h4>
-                    </div>
-                    <p id="competitive-pricing-text" class="principle-description">
-                        Our experienced and professional surveyors understand the need for trustworthy and fair pricing of our works, 
-                        this is why for many years our company has made sure that we provide the best work for the best price that 
-                        the customer can find. 
-                    </p>
-                </div>
-
-                <div class="principle">
-                    <div class="principle-container" onclick="principleClicked('reliability-text')">
-                        <div class="principle-icon-container">
-                            <img class="principle-icon" src="./assets/icons/principles/hand-shake.png" />
-                        </div>
-                        <h4 class="principle-text">Reliability</h4>
-                    </div>
-                    <p id="reliability-text" class="principle-description">
-                        At Castle Damp and Timber, we recognise the importance of reputation and reliability for, as we believe, 
-                        a company that you cannot trust is not a company that you would let into your home. For many years now, 
-                        this company has ensured that not only do we make sure the customer is getting a good deal but also that 
-                        our results are reliable. 
-                    </p>
-                </div>
-
-            </div>
-
-            <div id="why-choose-castle">
-                <h4>Why choose castle<br>damp & timber</h4>
-                <p id="why-description">
-                    All of our works are guaranteed and installed to British
-                    standards, in addition to this, we also offer insurance backed
-                    guarantees. Almost all of our work is both human and pet
-                    friendly meaning that there is no need to move out during
-                    the installation period. We are vetted and monitored by the UK
-                    Trades Confederation which ensures our continuing reputable
-                    and professional conduct, feel free to check us through an
-                    independent body or read our customer reviews.
-                    Our team has over 30 years of experience and are ready to help
-                    with any of your damp issues today, why not give us a call?
-                </p>
-                <button id="contact-us-button" onclick="changePage('contactInformation')">
-                    Contact us
-                </button>
-            </div>
-        </div>
-
         <div id="menu">
             <div id="menu-header">
                 <h4>Menu</h4>
@@ -195,6 +103,164 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        <div id="home">
+
+            <div id="introduction">
+                <h3>Who we are</h3>
+                <p id="introduction-text">
+                    Here at Castle Damp and Timber, as market leading damp
+                    specialists operating around Derbyshire, Nottinghamshire,
+                    North Leicestershire and all of Staffordshire, we pride
+                    ourselves in providing outstanding work with superb
+                    and friendly customer service.
+                </p>
+            </div>
+
+            <div id="principles">
+                <h3>Our principles</h3>
+
+                <div class="principle">
+                    <div class="principle-container" onclick="principleClicked('customer-satisfaction-text')">
+                        <div class="principle-icon-container">
+                            <img class="principle-icon" src="./assets/icons/principles/thumbs-up.png" />
+                        </div>
+                        <h4 class="principle-text">Customer Satisfaction</h4>
+                    </div>
+                    <p id="customer-satisfaction-text" class="principle-description">
+                        We endeavour to ensure that each and every customer gets the work that they both deserve require from us.
+                    </p>
+                </div>
+
+                <div class="principle">
+                    <div class="principle-container" onclick="principleClicked('excellent-results-text')">
+                        <div class="principle-icon-container">
+                            <img class="principle-icon" src="./assets/icons/principles/tick.png" />
+                        </div>
+                        <h4 class="principle-text">Excellent Results</h4>
+                    </div>
+                    <p id="excellent-results-text" class="principle-description">
+                        We aim to ensure that cleanliness and quality are by words of our performance in every job that we complete.  
+                        All our works come with long guarantees and are completed to our own high standards as well as that of the trading authorities of the UK.
+                    </p>
+                    <div id="menu">
+                        <div id="menu-header">
+                            <h4>Menu</h4>
+                        </div>
+                        <div id="menu-container">
+                            <div class="menu-item" onclick="menuItemClicked('home')">
+                                <div class="menu-icon-container">
+                                    <i class="fa fa-home menu-icon"></i>
+                                </div>
+                                <div class="menu-text">
+                                    <h4>Home</h4>
+                                    <p>Overview of Castle Damp and Timber</p>
+                                </div>
+                            </div>
+            
+                            <div class="menu-item" onclick="menuItemClicked('recentProjects')">
+                                <div class="menu-icon-container">
+                                    <i class="fa-solid fa-screwdriver-wrench menu-icon"></i>
+                                </div>
+                                <div class="menu-text">
+                                    <h4>Recent Projects</h4>
+                                    <p>Examples of Castle's Latest Work</p>
+                                </div>
+                            </div>
+            
+                            <!-- <div class="menu-item" onclick="menuItemClicked('certification')">
+                                <div class="menu-icon">
+                                    <img class="menu-icon" src="./assets/icons/menu/certification.png" />
+                                </div>
+                                <div class="menu-text">
+                                    <h4>CSR Certification</h4>
+                                    <p>Castle's Certification and Training</p>
+                                </div>
+                            </div>
+            
+                            <div class="menu-item" onclick="menuItemClicked('customerTestimonials')">
+                                <div class="menu-icon">
+                                    <img class="menu-icon" src="./assets/icons/menu/customer.png" />
+                                </div>
+                                <div class="menu-text">
+                                    <h4>Customer Testimonials</h4>
+                                    <p>See What Customers Have to Say</p>
+                                </div>
+                            </div> -->
+            
+                            <div class="menu-item" onclick="menuItemClicked('contactInformation')">
+                                <div class="menu-icon-container">
+                                    <i class="fa-solid fa-mobile-screen-button menu-icon"></i>
+                                </div>
+                                <div class="menu-text">
+                                    <h4>Contact Information</h4>
+                                    <p>Castle's Phone Numbers and Email</p>
+                                </div>
+                            </div>
+            
+                            <div class="menu-item" onclick="menuItemClicked('services')">
+                                <div class="menu-icon-container">
+                                    <i class="fa-solid fa-toolbox menu-icon"></i>
+                                </div>
+                                <div class="menu-text">
+                                    <h4>Services</h4>
+                                    <p>Type of work that Castle Provides</p>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>          </div>
+
+                <div class="principle">
+                    <div class="principle-container" onclick="principleClicked('competitive-pricing-text')">
+                        <div class="principle-icon-container">
+                            <img class="principle-icon" id="pound-icon" src="./assets/icons/principles/pound.png" />
+                        </div>
+                        <h4 class="principle-text">Competitive Pricing</h4>
+                    </div>
+                    <p id="competitive-pricing-text" class="principle-description">
+                        Our experienced and professional surveyors understand the need for trustworthy and fair pricing of our works, 
+                        this is why for many years our company has made sure that we provide the best work for the best price that 
+                        the customer can find. 
+                    </p>
+                </div>
+
+                <div class="principle">
+                    <div class="principle-container" onclick="principleClicked('reliability-text')">
+                        <div class="principle-icon-container">
+                            <img class="principle-icon" src="./assets/icons/principles/hand-shake.png" />
+                        </div>
+                        <h4 class="principle-text">Reliability</h4>
+                    </div>
+                    <p id="reliability-text" class="principle-description">
+                        At Castle Damp and Timber, we recognise the importance of reputation and reliability for, as we believe, 
+                        a company that you cannot trust is not a company that you would let into your home. For many years now, 
+                        this company has ensured that not only do we make sure the customer is getting a good deal but also that 
+                        our results are reliable. 
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="why-choose-castle">
+                <h4>Why choose castle<br>damp & timber</h4>
+                <p id="why-description">
+                    All of our works are guaranteed and installed to British
+                    standards, in addition to this, we also offer insurance backed
+                    guarantees. Almost all of our work is both human and pet
+                    friendly meaning that there is no need to move out during
+                    the installation period. We are vetted and monitored by the UK
+                    Trades Confederation which ensures our continuing reputable
+                    and professional conduct, feel free to check us through an
+                    independent body or read our customer reviews.
+                    Our team has over 30 years of experience and are ready to help
+                    with any of your damp issues today, why not give us a call?
+                </p>
+                <button id="contact-us-button" onclick="changePage('contactInformation')">
+                    Contact us
+                </button>
             </div>
         </div>
 
