@@ -32,13 +32,10 @@
     display: none;
 }
 
-#close-menu-icon {
-    display: none;
-    font-size: 15px;
-    transform: scaleX(1.5);
-    font-weight: 600;
+.toggle-menu-icon {
+    font-size: 20px !important  ;
 }
 
-#open-menu-icon {
-    width: 14px;
+#close-menu-icon {
+    display: none;
 }

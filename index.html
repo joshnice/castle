@@ -33,7 +33,8 @@
             <img id="header-logo" src="./assets/logo.png" onclick="changePage('home')" />
             <h5 id="header-title">Castle Damp & Timber</h5>
             <div id="header-menu-icon">
-                <img id="open-menu-icon" src="./assets/icons/menu.png" onclick="menuClicked()"/>
+                <i id="open-menu-icon" class="fa-solid fa-bars toggle-menu-icon" onclick="menuClicked()"></i>
+                <i id="close-menu-icon" class="fa-solid fa-xmark toggle-menu-icon" onclick="menuClicked()"></i>
                 <div id="close-menu-icon" onclick="menuClicked()">X</div>
             </div>
         </div>
@@ -150,7 +151,7 @@
                 <div class="principle">
                     <div class="principle-container" onclick="principleClicked('competitive-pricing-text')">
                         <div class="principle-icon-container">
-                            <img id="pound-icon" src="./assets/icons/principles/pound.png" />
+                            <img id="pound-icon" src="./assets/icons/pound.png" />
                         </div>
                         <h4 class="principle-text">Competitive Pricing</h4>
                     </div>
