@@ -40,16 +40,43 @@ function changePage(newPage) {
 
 function closeMenu(newPage) {
     pageElements[newPage].style.display = "flex";
-    pageElements.menu.style.display = "none";
-    openMenuIcon.style.display = "block";
-    closeMenuIcon.style.display = "none";
-    menuOpen = false;
+
+    const afterAnimation = new Promise((res) => {
+        anime({
+            targets: '#menu',
+            translateX: -screen.width,
+            duration: 500,
+            easing: 'linear',
+            complete: () =>  res(),
+        });
+    });
+
+    afterAnimation.then(() => {
+        pageElements.menu.style.display = "none";
+        openMenuIcon.style.display = "block";
+        closeMenuIcon.style.display = "none";
+        menuOpen = false;
+    });
 }
 
 function openMenu(previousPage) {
-    pageElements[previousPage].style.display = "none";
+
     pageElements.menu.style.display = "flex";
-    openMenuIcon.style.display = "none";
-    closeMenuIcon.style.display = "block";
-    menuOpen = true;
-}
+
+    const afterAnimation = new Promise((res) => {
+        anime({
+            targets: '#menu',
+            translateX: screen.width,
+            duration: 500,
+            easing: 'linear',
+            complete: () =>  res(),
+        });
+    });
+
+    afterAnimation.then(() => {
+        pageElements[previousPage].style.display = "none";
+        openMenuIcon.style.display = "none";
+        closeMenuIcon.style.display = "block";
+        menuOpen = true;
+    });
+}   
