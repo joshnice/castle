@@ -1,0 +1,13 @@
+#go-top {
+    background-color: #394982;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 90px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
