@@ -64,18 +64,22 @@
 
 #customer-satisfaction-text{
     display: none;
+    opacity: 0%;
 }
 
 #excellent-results-text {
     display: none;
+    opacity: 0%;
 }
 
 #competitive-pricing-text{
     display: none;
+    opacity: 0%;
 }
 
 #reliability-text{
     display: none;
+    opacity: 0%;
 }
 
 #why-choose-castle {

@@ -47,7 +47,7 @@ function closeMenu(newPage) {
             translateX: -screen.width,
             duration: 500,
             easing: 'linear',
-            complete: () =>  res(),
+            complete: () => res(),
         });
     });
 
@@ -69,7 +69,7 @@ function openMenu(previousPage) {
             translateX: screen.width,
             duration: 500,
             easing: 'linear',
-            complete: () =>  res(),
+            complete: () => res(),
         });
     });
 
