@@ -7,7 +7,7 @@
     padding: 20px 0px 0px 20px;
 
     width: calc(100vw - 20px);
-    height: 100vh;
+    height: calc(100vh - 80px);
 
     position: absolute;
     left: -100vw;
