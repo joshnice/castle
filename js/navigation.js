@@ -12,7 +12,7 @@ window.onload = () => {
         socialMedia: document.getElementById("social-media"),
         contactInformation: document.getElementById("contact-information"),
         services: document.getElementById("services"),
-
+        survey: document.getElementById("survey"),
     }
     openMenuIcon = document.getElementById("open-menu-icon");
     closeMenuIcon = document.getElementById("close-menu-icon");
