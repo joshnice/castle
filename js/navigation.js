@@ -80,3 +80,7 @@ function openMenu(previousPage) {
         menuOpen = true;
     });
 }   
+
+function newTab(url) {
+    window.open(url);
+}

@@ -1,3 +1,38 @@
 #certification {
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+#certification-introduction {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+#certificates-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 10px;
+    gap: 35px;
+}
+
+.certificate {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.certificate-body {
+    color: #4659a0;
+    font-family: "Mukta-Med";
 }
