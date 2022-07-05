@@ -1,3 +1,29 @@
 #customer-testimonials {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+    gap: 20px;
+}
+
+#customer-testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.customer-testimonial {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.customer-review-bold-text {
+    font-family: "Mukta-Reg" ;
 }
