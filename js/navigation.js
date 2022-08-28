@@ -1,3 +1,4 @@
+const INVALID_FORM_CLASS = "text-input-invalid";
 var pageElements, openMenuIcon, closeMenuIcon;
 var menuOpen = false;
 var currentPage = "home";
@@ -107,6 +108,10 @@ function leftPageHandler(page) {
             document.getElementById("email-input").value = "";
             document.getElementById("subject-input").value = "";
             document.getElementById("message-input").value = "";
+            document.getElementById("name-input").classList.remove(INVALID_FORM_CLASS);
+            document.getElementById("email-input").classList.remove(INVALID_FORM_CLASS);
+            document.getElementById("subject-input").classList.remove(INVALID_FORM_CLASS);
+            document.getElementById("message-input").classList.remove(INVALID_FORM_CLASS);
             break;
         default:
     }
