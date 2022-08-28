@@ -9,19 +9,20 @@ function emailIsValid (email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }    
 
-document.getElementById("name-input").addEventListener("change", (e) => {
+document.getElementById("name-input").addEventListener("input", (e) => {
+    console.log("val");
     formValueChange(e.target.value, "name");
 });
 
-document.getElementById("email-input").addEventListener("change", (e) => {
+document.getElementById("email-input").addEventListener("input", (e) => {
     formValueChange(e.target.value, "email");
 });
 
-document.getElementById("subject-input").addEventListener("change", (e) => {
+document.getElementById("subject-input").addEventListener("input", (e) => {
     formValueChange(e.target.value, "subject");
 });
 
-document.getElementById("message-input").addEventListener("change", (e) => {
+document.getElementById("message-input").addEventListener("input", (e) => {
     formValueChange(e.target.value, "message");
 });
 
