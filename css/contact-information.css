@@ -72,6 +72,10 @@
     font-family: "Mukta-Light", serif;
 }
 
+.text-input-invalid {
+    border-color: red;
+}
+
 .enquiry-input {
     height: 40px;
     padding: 0px 5px;
