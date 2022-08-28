@@ -89,12 +89,17 @@ textarea:focus {
     overflow-y: auto;
     overflow-x: hidden;
     height: calc(100% - 64px);
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 800px) {
     #content {
         width: 100%;
         max-width: 100%;
+        display: block;
+        gap: none;
     }
 }
 
