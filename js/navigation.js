@@ -76,6 +76,7 @@ function openMenu(previousPage) {
 
     afterAnimation.then(() => {
         pageElements[previousPage].style.display = "none";
+        leftPageHandler(previousPage);
         openMenuIcon.style.display = "none";
         closeMenuIcon.style.display = "block";
         menuOpen = true;
@@ -84,4 +85,17 @@ function openMenu(previousPage) {
 
 function newTab(url) {
     window.open(url);
+}
+
+function leftPageHandler(page) {
+    console.log("page", page);
+    switch (page) {
+        case "contactInformation":
+            document.getElementById("name-input").value = "";
+            document.getElementById("email-input").value = "";
+            document.getElementById("subject-input").value = "";
+            document.getElementById("message-input").value = "";
+            break;
+        default:
+    }
 }
