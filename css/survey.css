@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    #recent-projects {
+    #survey {
         align-items: flex-start;
     }
 }
