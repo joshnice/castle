@@ -80,6 +80,13 @@ textarea:focus {
     outline: none;
 }
 
+@media (max-width: 800px) {
+    #content {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 #content {
     margin-left: auto;
     margin-right: auto;

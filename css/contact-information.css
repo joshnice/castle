@@ -54,6 +54,7 @@
     align-items: flex-start;
     gap: 15px;
     padding: 0px 10px;
+    width: calc(100% - 20px);
 }
 
 #enquiry-form-inputs {
@@ -62,10 +63,12 @@
     justify-content: center;
     align-items: flex-start;
     gap: 15px;
+    width: 100%;
+
 }
 
 .text-input {
-    width: calc(90vw - 20px);
+    width: calc(100% - 20px);
     border: 0.5px solid #cccccc;
     border-radius: 5px;
     color: #707070;
