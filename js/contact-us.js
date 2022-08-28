@@ -1,10 +1,10 @@
 const INVALID_FORM_CLASS = "text-input-invalid";
 
 const formValues = {
-    name: { value: null, touched: false, validation: () => formValues.name.valid = formValues.name.value.length > 2, valid: false },
-    email: { value: null, touched: false, validation: () => formValues.email.valid = emailIsValid(formValues.email.value), valid: false },
-    subject: { value: null, touched: false, validation: () => formValues.subject.valid = formValues.subject.value.length > 2, valid: false },
-    message: { value: null, touched: false, validation: () => formValues.message.valid = formValues.message.value.length > 2, valid: false },
+    name: { value: null, validation: () => formValues.name.valid = formValues.name.value.length > 2, valid: false },
+    email: { value: null, validation: () => formValues.email.valid = emailIsValid(formValues.email.value), valid: false },
+    subject: { value: null, validation: () => formValues.subject.valid = formValues.subject.value.length > 2, valid: false },
+    message: { value: null, validation: () => formValues.message.valid = formValues.message.value.length > 2, valid: false },
 }
 
 const submitButton = document.getElementById("submit-enquiry-form");
