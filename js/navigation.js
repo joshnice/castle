@@ -88,7 +88,6 @@ function newTab(url) {
 }
 
 function leftPageHandler(page) {
-    console.log("page", page);
     switch (page) {
         case "contactInformation":
             document.getElementById("name-input").value = "";
