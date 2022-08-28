@@ -43,9 +43,18 @@ function disableSubmitButton() {
 
 }
 
+function getFormValues() {
+    return {
+        name: formValues.name.value,
+        email: formValues.email.value,
+        subject: formValues.subject.value,
+        message: formValues.message.value,
+    }
+}
+
 function submitForm() {
     emailjs.init("VD8B22KlOjrjAzUNW");
-    const { name, email, subject, message } = formValues
+    const { name, email, subject, message } = getFormValues(); 
     emailjs.send("service_3hprumf","template_9qrhjvr", {
         email,
         name,
