@@ -22,6 +22,7 @@ function menuClicked() {
     if (menuOpen) {
         closeMenu(currentPage);
     } else {
+        window.scroll({ top: 0, left: 0, behavior: "smooth" });
         openMenu(currentPage);
     }
 }
