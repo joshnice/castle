@@ -2,17 +2,30 @@
     display: none;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 10px;
     gap: 20px;
 }
 
+@media screen and (max-width: 800px) {
+    #customer-testimonials {
+        align-items: flex-start;
+    }
+}
+
 #customer-testimonial-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    #customer-testimonial-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
 
 .customer-testimonial {
