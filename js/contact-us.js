@@ -42,7 +42,6 @@ function formValueChange(value, accessor) {
 }
 
 function invalidInput(input, valid) {
-    console.log("invalidInput", input, valid);
     switch (input) {
         case "name":
             if (valid) {
@@ -107,5 +106,20 @@ function submitForm() {
         name,
         subject,
         message,
-    }).then((res) => console.log(res))
+    }).then(() => {
+        iziToast.success({
+            title: 'Success',
+            message: 'Enquiry form has been submitted',
+            position: "bottomCenter",
+            timeout: 3000,
+        });
+    }).catch((err) => {
+        console.error(err);
+        iziToast.error({
+            title: 'Error',
+            message: 'Enquiry form was not submitted',
+            position: "bottomCenter",
+            timeout: 3000,
+        });
+    });
 }
