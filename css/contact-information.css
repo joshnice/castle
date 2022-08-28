@@ -1,9 +1,15 @@
 #contact-information {
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin: 10px;
     gap: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    #contact-information {
+        align-items: flex-start;
+    }
 }
 
 #contact-introduction { 
@@ -14,8 +20,10 @@
     gap: 15px;
 }
 
+@media screen and (max-width: 800px) {
 #contact-title {
     align-self: flex-start;
+}
 }
 
 #contact-description {
