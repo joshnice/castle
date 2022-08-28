@@ -35,6 +35,12 @@ function emailIsValid (email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
+function formValueChange(value, accessor) {
+    changeFormValues(value, accessor);
+    disableSubmitButton();
+    invalidInput(accessor, formValues[accessor].valid);
+}
+
 function invalidInput(input, valid) {
     console.log("invalidInput", input, valid);
     switch (input) {
@@ -75,12 +81,6 @@ function changeFormValues(value, accessor) {
     formValues[accessor].value = value;
     formValues[accessor].valid = true;
     formValues[accessor].validation();
-}
-
-function formValueChange(value, accessor) {
-    changeFormValues(value, accessor);
-    disableSubmitButton();
-    invalidInput(accessor, formValues[accessor].valid);
 }
 
 function disableSubmitButton() {
