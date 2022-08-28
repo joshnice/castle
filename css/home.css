@@ -4,6 +4,12 @@
     gap: 40px;
 }
 
+@media screen and (max-width: 800px) {
+    #home {
+        padding-bottom: 75px;
+    }
+}
+
 #introduction {
     display: flex;
     flex-direction: column;

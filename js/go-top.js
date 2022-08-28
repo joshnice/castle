@@ -1,7 +1,8 @@
-var goTopElement = document.getElementById("go-top");
+const goTopElement = document.getElementById("go-top");
+const scrollContent = document.getElementById("content");
 
-document.addEventListener("scroll", () => {
-    var topOfPage = window.pageYOffset === 0;
+scrollContent.addEventListener("scroll", () => {
+    var topOfPage = scrollContent.scrollTop === 0;
     if (topOfPage) {
         goTopElement.style.display = "none";
     } else {
@@ -10,5 +11,5 @@ document.addEventListener("scroll", () => {
 });
 
 function goToTop() {
-    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    scrollContent.scroll({ top: 0, left: 0, behavior: 'smooth' });
 }

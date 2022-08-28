@@ -9,6 +9,7 @@
 @media screen and (max-width: 800px) {
     #contact-information {
         align-items: flex-start;
+        padding-bottom: 75px;
     }
 }
 

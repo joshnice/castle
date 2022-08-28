@@ -10,6 +10,7 @@
 @media screen and (max-width: 800px) {
     #survey {
         align-items: flex-start;
+        padding-bottom: 75px;
     }
 }
 
