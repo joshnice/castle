@@ -98,7 +98,22 @@ function getFormValues() {
     }
 }
 
+function resetForm() {
+    nameInput.value = "";
+    nameInput.classList.remove(INVALID_FORM_CLASS);
+    emailInput.value = "";
+    emailInput.classList.remove(INVALID_FORM_CLASS);
+    subjectInput.value = "";
+    subjectInput.classList.remove(INVALID_FORM_CLASS);
+    messageInput.value = "";
+    messageInput.classList.remove(INVALID_FORM_CLASS);
+    submitButton.textContent = "Submit";
+    submitButton.disabled = true;
+}
+
 function submitForm() {
+    submitButton.textContent = "Submitting..."
+    submitButton.disabled = true;
     emailjs.init("VD8B22KlOjrjAzUNW");
     const { name, email, subject, message } = getFormValues(); 
     emailjs.send("service_3hprumf","template_9qrhjvr", {
@@ -113,6 +128,7 @@ function submitForm() {
             position: "bottomCenter",
             timeout: 3000,
         });
+        resetForm();
     }).catch((err) => {
         console.error(err);
         iziToast.error({
