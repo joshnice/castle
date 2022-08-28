@@ -1,4 +1,8 @@
 function principleClicked(textName) {
+    if (screen.width >= 800) {
+        return;
+    }
+
     var principleText = document.getElementById(textName);
     var displayValue = window.getComputedStyle(principleText, null).display;
 
@@ -20,4 +24,3 @@ function principleClicked(textName) {
         });
     }
 }
-
