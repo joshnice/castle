@@ -7,6 +7,24 @@
     margin: 10px;
 }
 
+@media screen and (max-width: 800px) {
+    #services {
+        align-items: flex-start;
+    }
+}
+
+#service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    #service-container {
+        flex-direction: column;
+    }
+}
+
 .service {
     display: flex;
     flex-direction: column;
