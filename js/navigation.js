@@ -1,4 +1,3 @@
-const INVALID_FORM_CLASS = "text-input-invalid";
 var pageElements, openMenuIcon, closeMenuIcon;
 var menuOpen = false;
 var currentPage = "home";
