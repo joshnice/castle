@@ -15,20 +15,6 @@ window.onload = () => {
     }
     openMenuIcon = document.getElementById("open-menu-icon");
     closeMenuIcon = document.getElementById("close-menu-icon");
-    initCheckScreenSize();
-}
-
-function initCheckScreenSize() {
-    const { width } = screen;
-    if (width >= 700) {
-        pageElements.home.style.display = "flex";
-        pageElements.recentProjects.style.display = "flex";
-        pageElements.certification.style.display = "flex";
-        pageElements.customerTestimonials.style.display = "flex";
-        pageElements.contactInformation.style.display = "flex";
-        pageElements.services.style.display = "flex";
-        pageElements.survey.style.display = "flex";
-    }
 }
 
 function menuClicked() {
