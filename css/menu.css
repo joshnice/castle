@@ -6,13 +6,20 @@
     gap: 20px;
     padding: 20px 0px 0px 20px;
 
-    width: calc(100vw - 20px);
+    width: 500px;
     height: calc(100vh - 80px);
 
     position: absolute;
-    left: -100vw;
+    right: -520px;
     top: 55px;
     background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        width: calc(100vw - 20px);
+        left: -100vw;
+    }
 }
 
 #menu-container {

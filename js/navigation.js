@@ -48,7 +48,7 @@ function closeMenu(newPage, previousPage) {
     const afterAnimation = new Promise((res) => {
         anime({
             targets: '#menu',
-            translateX: -screen.width,
+            translateX: screen.availWidth >= 800 ? 500 : -screen.width,
             duration: 500,
             easing: 'linear',
             complete: () => res(),
@@ -69,7 +69,7 @@ function openMenu(previousPage) {
     const afterAnimation = new Promise((res) => {
         anime({
             targets: '#menu',
-            translateX: screen.width,
+            translateX: screen.availWidth >= 800 ? -500 : screen.width,
             duration: 500,
             easing: 'linear',
             complete: () => res(),
