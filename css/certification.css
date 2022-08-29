@@ -59,4 +59,5 @@
 .certificate-body {
     color: #4659a0;
     font-family: "Mukta-Med";
+    cursor: pointer;
 }
