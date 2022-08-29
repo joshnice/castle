@@ -4,12 +4,16 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    max-width: 95%;
+    margin: 30px auto 0px auto;
 }
 
 @media screen and (max-width: 800px) {
     #services {
         align-items: flex-start;
         padding-bottom: 75px;
+        max-width: none;
+        margin: 10px 10px 0px 10px;
     }
 }
 

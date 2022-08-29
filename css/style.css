@@ -133,26 +133,3 @@ textarea:focus {
         gap: 0px;
     }
 }
-
-.full-screen-width {
-    max-width: 1000px;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-@media screen and (max-width: 800px) {
-    .full-screen-width {
-        max-width: none;
-    }
-}
-
-.page-margin {
-    margin: 0px;
-    margin-top: 30px;
-}
-
-@media screen and (max-width: 800px) {
-    .page-margin {
-        margin: 10px 10px 0px 10px;
-    }
-}

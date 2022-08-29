@@ -4,13 +4,16 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: calc(100% - 10px);
+    max-width: 90%;
+    margin: 30px auto 0px auto;
 }
 
 @media screen and (max-width: 800px) {
     #certification {
+        max-width: none;
         align-items: flex-start;
         padding-bottom: 75px;
+        margin: 10px 10px 0px 10px;
     }
 }
 

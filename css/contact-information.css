@@ -3,12 +3,16 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    max-width: 1000px;
+    margin: 30px auto 0px auto;
 }
 
 @media screen and (max-width: 800px) {
     #contact-information {
+        max-width: none;
         align-items: flex-start;
         padding-bottom: 75px;
+        margin: 10px 10px 0px 10px;
     }
 }
 
