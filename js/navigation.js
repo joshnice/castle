@@ -1,4 +1,4 @@
-var pageElements, openMenuIcon, closeMenuIcon;
+var pageElements, openMenuIcon, closeMenuIcon, menuBlackout;
 var menuOpen = false;
 var currentPage = "home";
 
@@ -15,6 +15,7 @@ window.onload = () => {
     }
     openMenuIcon = document.getElementById("open-menu-icon");
     closeMenuIcon = document.getElementById("close-menu-icon");
+    menuBlackout = document.getElementById("menu-blackout");
 }
 
 function menuClicked() {
@@ -46,6 +47,7 @@ function closeMenu(newPage, previousPage) {
     pageElements[newPage].style.display = "flex";
 
     const afterAnimation = new Promise((res) => {
+        menuBlackout.style.display = "none";
         anime({
             targets: '#menu',
             translateX: screen.availWidth >= 800 ? 500 : -screen.width,
@@ -78,6 +80,7 @@ function openMenu(previousPage) {
 
     afterAnimation.then(() => {
         if (screen.availWidth < 800) pageElements[previousPage].style.display = "none";
+        if (screen.availWidth >= 800) menuBlackout.style.display = "block";
         leftPageHandler(previousPage);
         openMenuIcon.style.display = "none";
         closeMenuIcon.style.display = "block";

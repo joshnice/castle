@@ -16,6 +16,7 @@
 #header-logo {
     width: 75px;
     margin-left: 5px; 
+    cursor: pointer;
 }
 
 #header-title {
