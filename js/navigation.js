@@ -1,6 +1,8 @@
 var pageElements, openMenuIcon, closeMenuIcon, menuBlackout;
 var menuOpen = false;
 var currentPage = "home";
+const content = document.getElementById("content");
+
 
 window.onload = () => {
     pageElements = {
@@ -22,18 +24,19 @@ function menuClicked() {
     if (menuOpen) {
         closeMenu(currentPage);
     } else {
-        if (screen.availWidth < 800) window.scroll({ top: 0, left: 0, behavior: "smooth" });
         openMenu(currentPage);
     }
 }
 
 function menuItemClicked(menuItem) {
+    content.scroll({ top: 0, left: 0, behavior: "auto" });
     const previousPage = currentPage;
     currentPage = menuItem;
     closeMenu(menuItem, previousPage);
 }
 
 function changePage(newPage) {
+    content.scroll({ top: 0, left: 0, behavior: "auto" });
     pageElements[newPage].style.display = "flex";
     pageElements[currentPage].style.display = "none";
     currentPage = newPage;
