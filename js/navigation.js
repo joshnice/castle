@@ -21,14 +21,15 @@ function menuClicked() {
     if (menuOpen) {
         closeMenu(currentPage);
     } else {
-        window.scroll({ top: 0, left: 0, behavior: "smooth" });
+        if (screen.availWidth < 800) window.scroll({ top: 0, left: 0, behavior: "smooth" });
         openMenu(currentPage);
     }
 }
 
 function menuItemClicked(menuItem) {
+    const previousPage = currentPage;
     currentPage = menuItem;
-    closeMenu(menuItem);
+    closeMenu(menuItem, previousPage);
 }
 
 function changePage(newPage) {
@@ -38,7 +39,10 @@ function changePage(newPage) {
     closeMenu(newPage);
 }
 
-function closeMenu(newPage) {
+function closeMenu(newPage, previousPage) {
+    if (screen.availWidth >= 800 && previousPage != null) {
+        pageElements[previousPage].style.display = "none";   
+    }
     pageElements[newPage].style.display = "flex";
 
     const afterAnimation = new Promise((res) => {
@@ -60,7 +64,6 @@ function closeMenu(newPage) {
 }
 
 function openMenu(previousPage) {
-
     pageElements.menu.style.display = "flex";
 
     const afterAnimation = new Promise((res) => {
@@ -74,7 +77,7 @@ function openMenu(previousPage) {
     });
 
     afterAnimation.then(() => {
-        pageElements[previousPage].style.display = "none";
+        if (screen.availWidth < 800) pageElements[previousPage].style.display = "none";
         leftPageHandler(previousPage);
         openMenuIcon.style.display = "none";
         closeMenuIcon.style.display = "block";
