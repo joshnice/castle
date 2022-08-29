@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    max-width: 90%;
+    max-width: 1000px;
     margin: 30px auto 0px auto;
 }
 
@@ -27,24 +27,21 @@
 }
 
 #certificates-container {
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 60px;
-    row-gap: 40px;
+    width: calc(100% - 20px);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 10px;
+    gap: 50px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 800px) {
     #certificates-container {
-        width: calc(100% - 20px);
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 0px 10px;
-        gap: 35px;
+        gap: 30px;
+        margin-top: 0px;
     }
 }
 
