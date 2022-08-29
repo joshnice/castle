@@ -13,17 +13,19 @@
     right: -520px;
     top: 55px;
     background-color: white;
+    z-index: 11;
 }
 
 #menu-blackout {
     display: none;
-    width: calc(100vw - 500px);
+    width: 100vw;
     height: 100vh; 
     background-color: #000000;
-    opacity: 0.5;
+    opacity: 0;
     position: absolute;
     top: 60px;
     left: 0;
+    z-index: 10;
 }
 
 @media screen and (max-width: 800px) {

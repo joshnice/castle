@@ -46,8 +46,7 @@ function closeMenu(newPage, previousPage) {
     }
     pageElements[newPage].style.display = "flex";
 
-    const afterAnimation = new Promise((res) => {
-        menuBlackout.style.display = "none";
+    const afterAnimationMenu = new Promise((res) => {
         anime({
             targets: '#menu',
             translateX: screen.availWidth >= 800 ? 500 : -screen.width,
@@ -57,7 +56,22 @@ function closeMenu(newPage, previousPage) {
         });
     });
 
-    afterAnimation.then(() => {
+    const afterAnimationBlackoutMenu = new Promise((res) => {
+        if (screen.availWidth >= 800) {
+            anime({
+                targets: '#menu-blackout',
+                opacity: [0.5, 0],
+                duration: 500,
+                easing: 'linear',
+                complete: () => res(),
+            });
+        } else {
+            res();
+        }
+    });
+
+    Promise.all([afterAnimationMenu, afterAnimationBlackoutMenu]).then(() => {
+        menuBlackout.style.display = "none";
         pageElements.menu.style.display = "none";
         openMenuIcon.style.display = "block";
         closeMenuIcon.style.display = "none";
@@ -68,7 +82,7 @@ function closeMenu(newPage, previousPage) {
 function openMenu(previousPage) {
     pageElements.menu.style.display = "flex";
 
-    const afterAnimation = new Promise((res) => {
+    const afterAnimationMenu = new Promise((res) => {
         anime({
             targets: '#menu',
             translateX: screen.availWidth >= 800 ? -500 : screen.width,
@@ -78,9 +92,23 @@ function openMenu(previousPage) {
         });
     });
 
-    afterAnimation.then(() => {
+    const afterAnimationBlackoutMenu = new Promise((res) => {
+        if (screen.availWidth >= 800) {
+            menuBlackout.style.display = "block";
+            anime({
+                targets: '#menu-blackout',
+                opacity: [0, 0.5],
+                duration: 500,
+                easing: 'linear',
+                complete: () => res(),
+            });
+        } else {
+            res();
+        }
+    });
+
+    Promise.all([afterAnimationMenu, afterAnimationBlackoutMenu]).then(() => {
         if (screen.availWidth < 800) pageElements[previousPage].style.display = "none";
-        if (screen.availWidth >= 800) menuBlackout.style.display = "block";
         leftPageHandler(previousPage);
         openMenuIcon.style.display = "none";
         closeMenuIcon.style.display = "block";
