@@ -29,7 +29,6 @@
     flex-grow: 1;
     justify-content: flex-end;
     margin-right: 10px;
-    cursor: pointer;
 }
 
 #menu {
@@ -37,9 +36,11 @@
 }
 
 .toggle-menu-icon {
-    font-size: 20px !important  ;
+    font-size: 20px !important;
+    cursor: pointer;
 }
 
 #close-menu-icon {
     display: none;
+    cursor: pointer;
 }
