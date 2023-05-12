@@ -37,8 +37,10 @@
     gap: 10px;
 }
 
-.service + .service {
-    margin-top: 20px;
+@media screen and (max-width: 800px) {
+    .service + .service {
+        margin-top: 20px;
+    }
 }
 
 .service-text {
