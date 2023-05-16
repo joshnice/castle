@@ -116,7 +116,7 @@ function submitForm() {
     submitButton.disabled = true;
     emailjs.init("VD8B22KlOjrjAzUNW");
     const { name, email, subject, message } = getFormValues(); 
-    emailjs.send("service_3hprumf","template_9qrhjvr", {
+    emailjs.send("service_a41czqj","template_9qrhjvr", {
         email,
         name,
         subject,
